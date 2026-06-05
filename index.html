@@ -395,7 +395,7 @@ function searchTable(q){ currentSearch = q; buildTable(); }
 // 3. Paste link vào SHEET_CSV_URL bên dưới
 // 4. Deploy file HTML lên GitHub Pages / Netlify Drop / S3
 // Khi load trang, HTML tự fetch CSV và đọc cột Trạng thái (cột J) từ Sheet
-const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQdcpqfu6EimEPixpGjA0Fn8hzxg5fDUv_cAJ5aJw-Ns7bPll6FbanpWB-0itOCwyPrvWF24L6pj7qI/pub?output=csv'; // ← PASTE LINK CSV VÀO ĐÂY
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQdcpqfu6EimEPixpGjA0Fn8hzxg5fDUv_cAJ5aJw-Ns7bPll6FbanpWB-0itOCwyPrvWF24L6pj7qI/pub?gid=1741050495&single=true&output=csv; // ← PASTE LINK CSV VÀO ĐÂY
 
 async function syncFromSheet() {
   const indicator = document.getElementById('sync-status');
