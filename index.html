@@ -202,63 +202,63 @@
 </div>
 
 <footer class="site-footer">
-  <div class="footer-note">EraBlue · Content Roadmap v2 · T2–T6 09–13/06/2026</div>
+  <div class="footer-note">EraBlue · Content Roadmap v2 · T2–T6 09–12/06/2026</div>
   <div class="footer-note" id="sync-status" style="color:var(--text3)">Sheet chưa kết nối — dùng trạng thái local</div>
 </footer>
 
 <script>
 // Status logic: vol_nh > vol_sp → "SP vol thấp tự nhiên" | vol_nh == 0 && sp > 0 → "Chưa research NH" | sp == 0 → "Chưa có SP data" | else → "OK"
 const DATA = [
-  {rank:1, name:"Handphone",             group:"g1", vol_sp:12497490, vol_nh:161950,  day:"T2 09/06"},
-  {rank:2, name:"Tablet",                group:"g1", vol_sp:329545,   vol_nh:32450,   day:"T2 09/06"},
-  {rank:3, name:"Laptop",                group:"g1", vol_sp:106350,   vol_nh:110200,  day:"T2 09/06"},
-  {rank:4, name:"Rice Cooker",           group:"g2", vol_sp:23810,    vol_nh:41220,   day:"T2 09/06"},
-  {rank:5, name:"Smartwatch",            group:"g2", vol_sp:18280,    vol_nh:48650,   day:"T2 09/06"},
-  {rank:6, name:"Kompor Gas",            group:"g2", vol_sp:14565,    vol_nh:62250,   day:"T2 09/06"},
-  {rank:7, name:"TV",                    group:"g2", vol_sp:14475,    vol_nh:47650,   day:"T2 09/06"},
-  {rank:8, name:"Kulkas",                group:"g2", vol_sp:12250,    vol_nh:43610,   day:"T2 09/06"},
-  {rank:9, name:"AC",                    group:"g2", vol_sp:11855,    vol_nh:133980,  day:"T2 09/06"},
-  {rank:10,name:"Water Dispenser",       group:"g2", vol_sp:11295,    vol_nh:2750,    day:"T3 10/06"},
-  {rank:11,name:"Mesin Cuci",            group:"g2", vol_sp:10205,    vol_nh:57810,   day:"T3 10/06"},
-  {rank:12,name:"Speaker",               group:"g3", vol_sp:8510,     vol_nh:106550,  day:"T3 10/06"},
-  {rank:13,name:"Blender",               group:"g3", vol_sp:5885,     vol_nh:80520,   day:"T3 10/06"},
-  {rank:14,name:"Kipas Angin",           group:"g3", vol_sp:5580,     vol_nh:171450,  day:"T3 10/06"},
-  {rank:15,name:"Setrika",               group:"g3", vol_sp:4075,     vol_nh:34680,   day:"T3 10/06"},
-  {rank:16,name:"Mouse",                 group:"g3", vol_sp:3055,     vol_nh:76950,   day:"T3 10/06"},
-  {rank:17,name:"Headphone",             group:"g3", vol_sp:2760,     vol_nh:29350,   day:"T3 10/06"},
-  {rank:18,name:"Mixer",                 group:"g3", vol_sp:2610,     vol_nh:42350,   day:"T3 10/06"},
-  {rank:19,name:"Air Cooler",            group:"g3", vol_sp:2025,     vol_nh:22630,   day:"T4 11/06"},
-  {rank:20,name:"Showcase",              group:"g3", vol_sp:1845,     vol_nh:36760,   day:"T4 11/06"},
-  {rank:21,name:"Microwave",             group:"g3", vol_sp:975,      vol_nh:34410,   day:"T4 11/06"},
-  {rank:22,name:"Power Bank",            group:"g3", vol_sp:950,      vol_nh:19050,   day:"T4 11/06"},
-  {rank:23,name:"Freezer",               group:"g3", vol_sp:870,      vol_nh:54750,   day:"T4 11/06"},
-  {rank:24,name:"Vacuum Cleaner",        group:"g3", vol_sp:760,      vol_nh:40530,   day:"T4 11/06"},
-  {rank:25,name:"Kabel Pengisian Daya",  group:"g3", vol_sp:690,      vol_nh:0,       day:"T4 11/06"},
-  {rank:26,name:"Air Purifier",          group:"g3", vol_sp:590,      vol_nh:31130,   day:"T4 11/06"},
-  {rank:27,name:"Adaptor",               group:"g3", vol_sp:520,      vol_nh:32400,   day:"T4 11/06"},
-  {rank:28,name:"Hair Dryer",            group:"g3", vol_sp:490,      vol_nh:25290,   day:"T5 12/06"},
-  {rank:29,name:"Water Heater",          group:"g3", vol_sp:440,      vol_nh:0,       day:"T5 12/06"},
-  {rank:30,name:"Oven Listrik",          group:"g3", vol_sp:390,      vol_nh:19950,   day:"T5 12/06"},
-  {rank:31,name:"Fry Pan",               group:"g3", vol_sp:370,      vol_nh:1360,    day:"T5 12/06"},
-  {rank:32,name:"Phone Case",            group:"g3", vol_sp:335,      vol_nh:1310,    day:"T5 12/06"},
-  {rank:33,name:"Air Fryer",             group:"g3", vol_sp:330,      vol_nh:41275,   day:"T5 12/06"},
-  {rank:34,name:"Antena TV",             group:"g3", vol_sp:315,      vol_nh:0,       day:"T5 12/06"},
-  {rank:35,name:"CCTV",                  group:"g4", vol_sp:150,      vol_nh:0,       day:"T5 12/06"},
-  {rank:36,name:"Ketel Listrik",         group:"g4", vol_sp:110,      vol_nh:765,     day:"T5 12/06"},
-  {rank:37,name:"Hair Styler",           group:"g4", vol_sp:110,      vol_nh:100,     day:"T6 13/06"},
-  {rank:38,name:"Juicer",                group:"g4", vol_sp:105,      vol_nh:18240,   day:"T6 13/06"},
-  {rank:39,name:"Phone Holder",          group:"g4", vol_sp:95,       vol_nh:4170,    day:"T6 13/06"},
-  {rank:40,name:"Mop Set",               group:"g4", vol_sp:60,       vol_nh:1205,    day:"T6 13/06"},
-  {rank:41,name:"Kipas Mini",            group:"g4", vol_sp:30,       vol_nh:18450,   day:"T6 13/06"},
-  {rank:42,name:"Panci Multifungsi",     group:"g4", vol_sp:25,       vol_nh:395,     day:"T6 13/06"},
-  {rank:43,name:"Spatula",               group:"g4", vol_sp:20,       vol_nh:0,       day:"T6 13/06"},
-  {rank:44,name:"Kompor Induksi",        group:"g4", vol_sp:20,       vol_nh:10340,   day:"T6 13/06"},
-  {rank:45,name:"USB",                   group:"g4", vol_sp:15,       vol_nh:6700,    day:"T6 13/06"},
-  {rank:46,name:"Panci",                 group:"g4", vol_sp:15,       vol_nh:69900,   day:"T6 13/06"},
-  {rank:47,name:"Memory Card",           group:"g4", vol_sp:15,       vol_nh:5750,    day:"T6 13/06"},
-  {rank:48,name:"Tempat Makan",          group:"g4", vol_sp:10,       vol_nh:0,       day:"T6 13/06"},
-  {rank:49,name:"Pisau",                 group:"g4", vol_sp:5,        vol_nh:0,       day:"T6 13/06"},
-  {rank:50,name:"Aksesori",              group:"g4", vol_sp:0,        vol_nh:130,     day:"T6 13/06"},
+  {rank:1, name:"Handphone",             group:"g1", vol_sp:12497490, vol_nh:161950,  day:"T2 08/06"},
+  {rank:2, name:"Tablet",                group:"g1", vol_sp:329545,   vol_nh:32450,   day:"T2 08/06"},
+  {rank:3, name:"Laptop",                group:"g1", vol_sp:106350,   vol_nh:110200,  day:"T2 08/06"},
+  {rank:4, name:"Rice Cooker",           group:"g2", vol_sp:23810,    vol_nh:41220,   day:"T2 08/06"},
+  {rank:5, name:"Smartwatch",            group:"g2", vol_sp:18280,    vol_nh:48650,   day:"T2 08/06"},
+  {rank:6, name:"Kompor Gas",            group:"g2", vol_sp:14565,    vol_nh:62250,   day:"T2 08/06"},
+  {rank:7, name:"TV",                    group:"g2", vol_sp:14475,    vol_nh:47650,   day:"T2 08/06"},
+  {rank:8, name:"Kulkas",                group:"g2", vol_sp:12250,    vol_nh:43610,   day:"T2 08/06"},
+  {rank:9, name:"AC",                    group:"g2", vol_sp:11855,    vol_nh:133980,  day:"T2 08/06"},
+  {rank:10,name:"Water Dispenser",       group:"g2", vol_sp:11295,    vol_nh:2750,    day:"T3 09/06"},
+  {rank:11,name:"Mesin Cuci",            group:"g2", vol_sp:10205,    vol_nh:57810,   day:"T3 09/06"},
+  {rank:12,name:"Speaker",               group:"g3", vol_sp:8510,     vol_nh:106550,  day:"T3 09/06"},
+  {rank:13,name:"Blender",               group:"g3", vol_sp:5885,     vol_nh:80520,   day:"T3 09/06"},
+  {rank:14,name:"Kipas Angin",           group:"g3", vol_sp:5580,     vol_nh:171450,  day:"T3 09/06"},
+  {rank:15,name:"Setrika",               group:"g3", vol_sp:4075,     vol_nh:34680,   day:"T3 09/06"},
+  {rank:16,name:"Mouse",                 group:"g3", vol_sp:3055,     vol_nh:76950,   day:"T3 09/06"},
+  {rank:17,name:"Headphone",             group:"g3", vol_sp:2760,     vol_nh:29350,   day:"T3 09/06"},
+  {rank:18,name:"Mixer",                 group:"g3", vol_sp:2610,     vol_nh:42350,   day:"T3 09/06"},
+  {rank:19,name:"Air Cooler",            group:"g3", vol_sp:2025,     vol_nh:22630,   day:"T4 10/06"},
+  {rank:20,name:"Showcase",              group:"g3", vol_sp:1845,     vol_nh:36760,   day:"T4 10/06"},
+  {rank:21,name:"Microwave",             group:"g3", vol_sp:975,      vol_nh:34410,   day:"T4 10/06"},
+  {rank:22,name:"Power Bank",            group:"g3", vol_sp:950,      vol_nh:19050,   day:"T4 10/06"},
+  {rank:23,name:"Freezer",               group:"g3", vol_sp:870,      vol_nh:54750,   day:"T4 10/06"},
+  {rank:24,name:"Vacuum Cleaner",        group:"g3", vol_sp:760,      vol_nh:40530,   day:"T4 10/06"},
+  {rank:25,name:"Kabel Pengisian Daya",  group:"g3", vol_sp:690,      vol_nh:0,       day:"T4 10/06"},
+  {rank:26,name:"Air Purifier",          group:"g3", vol_sp:590,      vol_nh:31130,   day:"T4 10/06"},
+  {rank:27,name:"Adaptor",               group:"g3", vol_sp:520,      vol_nh:32400,   day:"T4 10/06"},
+  {rank:28,name:"Hair Dryer",            group:"g3", vol_sp:490,      vol_nh:25290,   day:"T5 11/06"},
+  {rank:29,name:"Water Heater",          group:"g3", vol_sp:440,      vol_nh:0,       day:"T5 11/06"},
+  {rank:30,name:"Oven Listrik",          group:"g3", vol_sp:390,      vol_nh:19950,   day:"T5 11/06"},
+  {rank:31,name:"Fry Pan",               group:"g3", vol_sp:370,      vol_nh:1360,    day:"T5 11/06"},
+  {rank:32,name:"Phone Case",            group:"g3", vol_sp:335,      vol_nh:1310,    day:"T5 11/06"},
+  {rank:33,name:"Air Fryer",             group:"g3", vol_sp:330,      vol_nh:41275,   day:"T5 11/06"},
+  {rank:34,name:"Antena TV",             group:"g3", vol_sp:315,      vol_nh:0,       day:"T5 11/06"},
+  {rank:35,name:"CCTV",                  group:"g4", vol_sp:150,      vol_nh:0,       day:"T5 11/06"},
+  {rank:36,name:"Ketel Listrik",         group:"g4", vol_sp:110,      vol_nh:765,     day:"T5 11/06"},
+  {rank:37,name:"Hair Styler",           group:"g4", vol_sp:110,      vol_nh:100,     day:"T6 12/06"},
+  {rank:38,name:"Juicer",                group:"g4", vol_sp:105,      vol_nh:18240,   day:"T6 12/06"},
+  {rank:39,name:"Phone Holder",          group:"g4", vol_sp:95,       vol_nh:4170,    day:"T6 12/06"},
+  {rank:40,name:"Mop Set",               group:"g4", vol_sp:60,       vol_nh:1205,    day:"T6 12/06"},
+  {rank:41,name:"Kipas Mini",            group:"g4", vol_sp:30,       vol_nh:18450,   day:"T6 12/06"},
+  {rank:42,name:"Panci Multifungsi",     group:"g4", vol_sp:25,       vol_nh:395,     day:"T6 12/06"},
+  {rank:43,name:"Spatula",               group:"g4", vol_sp:20,       vol_nh:0,       day:"T6 12/06"},
+  {rank:44,name:"Kompor Induksi",        group:"g4", vol_sp:20,       vol_nh:10340,   day:"T6 12/06"},
+  {rank:45,name:"USB",                   group:"g4", vol_sp:15,       vol_nh:6700,    day:"T6 12/06"},
+  {rank:46,name:"Panci",                 group:"g4", vol_sp:15,       vol_nh:69900,   day:"T6 12/06"},
+  {rank:47,name:"Memory Card",           group:"g4", vol_sp:15,       vol_nh:5750,    day:"T6 12/06"},
+  {rank:48,name:"Tempat Makan",          group:"g4", vol_sp:10,       vol_nh:0,       day:"T6 12/06"},
+  {rank:49,name:"Pisau",                 group:"g4", vol_sp:5,        vol_nh:0,       day:"T6 12/06"},
+  {rank:50,name:"Aksesori",              group:"g4", vol_sp:0,        vol_nh:130,     day:"T6 12/06"},
 ];
 
 // Derive status from data — single source of truth
@@ -296,7 +296,7 @@ const progColors = {
 function fmt(n){ return n > 0 ? n.toLocaleString('id-ID') : "—"; }
 
 function buildTimeline(){
-  const days = ["T2 09/06","T3 10/06","T4 11/06","T5 12/06","T6 13/06"];
+  const days = ["T2 08/06","T3 09/06","T4 10/06","T5 11/06","T6 12/06"];
   const grid = document.getElementById('timelineGrid');
   grid.innerHTML = '';
   days.forEach(day => {
